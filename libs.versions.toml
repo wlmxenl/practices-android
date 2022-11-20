@@ -1,0 +1,15 @@
+[versions]
+compileSdk = "32"
+minSdk = "21"
+targetSdk = "32"
+javaCompiler = "1.8"
+
+scaffold = "a9d5843158"
+androidxActivity = "1.6.1"
+androidxAppCompat = "1.5.1"
+
+[libraries]
+scaffold-page = { group = "com.github.wlmxenl.scaffold-android", name = "lib-page", version.ref = "scaffold" }
+scaffold-arch = { group = "com.github.wlmxenl.scaffold-android", name = "lib-arch", version.ref = "scaffold" }
+
+[plugins]
