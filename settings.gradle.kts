@@ -21,4 +21,5 @@ dependencyResolutionManagement {
 rootProject.name = "practices-android"
 include(":app")
 include(":core:common")
+include(":core:openapi-gitlab")
 include(":feature:custom-view")

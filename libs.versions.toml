@@ -9,12 +9,23 @@ testAndroidxJunit = "1.1.3"
 testAndroidxEspressoCore = "3.4.0"
 
 scaffold = "a9d5843158"
-androidxActivity = "1.6.1"
+utilcode = "1.31.1"
+okhttp = "4.10.0"
+net = "3.5.2"
+
+androidxCore = "1.8.0"
 androidxAppCompat = "1.5.1"
+androidxActivity = "1.6.1"
 
 [libraries]
 scaffold-page = { group = "com.github.wlmxenl.scaffold-android", name = "lib-page", version.ref = "scaffold" }
 scaffold-arch = { group = "com.github.wlmxenl.scaffold-android", name = "lib-arch", version.ref = "scaffold" }
+utilcode = { group = "com.blankj", name = "utilcodex", version.ref = "utilcode" }
+okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
+net = { group = "com.github.liangjingkanji", name = "Net", version.ref = "net" }
+
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidxCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "androidxAppCompat" }
 
 test-junit4 = { group = "junit", name = "junit", version.ref = "testJunit" }
 test-androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "testAndroidxJunit" }
