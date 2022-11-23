@@ -3,7 +3,6 @@ package com.gitlab.api.file
 import android.text.TextUtils
 import com.blankj.utilcode.util.EncodeUtils
 import com.blankj.utilcode.util.GsonUtils
-import com.blankj.utilcode.util.LogUtils
 import com.drake.net.*
 import kotlinx.coroutines.CoroutineScope
 import okhttp3.Response
@@ -141,8 +140,6 @@ class GitLabFileRepository(
     private fun buildRequestUrl(filePath: String): String {
         val finalBaseUrl = if (baseUrl.endsWith("/")) baseUrl.dropLast(1) else baseUrl
         val encodeFilePath = EncodeUtils.urlEncode(filePath)
-        return "$finalBaseUrl/api/v4/projects/$projectId/repository/files/$encodeFilePath".apply {
-            LogUtils.e(this)
-        }
+        return "$finalBaseUrl/api/v4/projects/$projectId/repository/files/$encodeFilePath"
     }
 }
