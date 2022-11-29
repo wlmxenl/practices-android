@@ -16,6 +16,9 @@ net = "3.5.2"
 androidxCore = "1.8.0"
 androidxAppCompat = "1.5.1"
 androidxActivity = "1.6.1"
+androidMaterial = "1.5.0"
+kotlinxCoroutines = "1.6.1"
+lifecycle = "2.5.1"
 
 [libraries]
 scaffold-page = { group = "com.github.wlmxenl.scaffold-android", name = "lib-page", version.ref = "scaffold" }
@@ -24,8 +27,16 @@ utilcode = { group = "com.blankj", name = "utilcodex", version.ref = "utilcode" 
 okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
 net = { group = "com.github.liangjingkanji", name = "Net", version.ref = "net" }
 
+material = { group = "com.google.android.material", name = "material", version.ref = "androidMaterial" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidxCore" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "androidxAppCompat" }
+
+# https://developer.android.google.cn/kotlin/coroutines
+kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "kotlinxCoroutines" }
+# https://developer.android.google.cn/jetpack/androidx/releases/lifecycle
+androidx-lifecycle-viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
+androidx-lifecycle-livedata = { group = "androidx.lifecycle", name = "lifecycle-livedata", version.ref = "lifecycle" }
+androidx-lifecycle-runtime = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle" }
 
 test-junit4 = { group = "junit", name = "junit", version.ref = "testJunit" }
 test-androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "testAndroidxJunit" }

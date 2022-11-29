@@ -26,12 +26,19 @@ android {
 }
 
 dependencies {
-    implementation("androidx.core:core-ktx:1.7.0")
-    implementation("androidx.appcompat:appcompat:1.4.1")
-    implementation("com.google.android.material:material:1.5.0")
+    api(libs.androidx.core.ktx)
+    api(libs.androidx.appcompat)
+    api(libs.material)
 
-    api(libs.scaffold.page)
-    api(libs.scaffold.arch)
+    api(libs.kotlinx.coroutines.android)
+
+    api(libs.androidx.lifecycle.viewmodel)
+    api(libs.androidx.lifecycle.livedata)
+    api(libs.androidx.lifecycle.runtime)
+
+    //api(libs.scaffold.page)
+    //api(libs.scaffold.arch)
+    api(libs.utilcode)
 
     testImplementation(libs.test.junit4)
     androidTestImplementation(libs.test.androidx.junit)
