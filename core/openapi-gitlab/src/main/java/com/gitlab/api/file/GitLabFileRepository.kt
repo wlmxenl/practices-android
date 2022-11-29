@@ -6,6 +6,7 @@ import com.blankj.utilcode.util.GsonUtils
 import com.drake.net.*
 import kotlinx.coroutines.CoroutineScope
 import okhttp3.Response
+import okio.FileNotFoundException
 
 class GitLabFileRepository(
     private val baseUrl: String,
@@ -111,15 +112,15 @@ class GitLabFileRepository(
         scope: CoroutineScope,
         filePath: String,
         ref: String = "main"
-    ): GitLabFile? {
+    ): Result<GitLabFile> {
         return scope.Get<String>(buildRequestUrl(filePath)) {
             param("ref", ref)
             param("access_token", accessToken)
         }.runCatching {
             await()
-        }.let {
-            if (it.isFailure) null
-            else GsonUtils.fromJson(it.getOrThrow(), GitLabFile::class.java)
+        }.let { result ->
+            if (result.isFailure) Result.failure(result.exceptionOrNull()!!)
+            else Result.success(GsonUtils.fromJson(result.getOrThrow(), GitLabFile::class.java))
         }
     }
 
