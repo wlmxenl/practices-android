@@ -26,17 +26,28 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.toVersion(libs.versions.javaCompiler.get())
         targetCompatibility = JavaVersion.toVersion(libs.versions.javaCompiler.get())
     }
+
     kotlinOptions {
         jvmTarget = libs.versions.javaCompiler.get()
+    }
+
+    viewBinding {
+        enable = true
+    }
+
+    dataBinding {
+        enable = true
     }
 }
 
 dependencies {
     implementation(project(":core:common"))
+    implementation(project(":feature:custom-view"))
 
     testImplementation(libs.test.junit4)
     androidTestImplementation(libs.test.androidx.junit)

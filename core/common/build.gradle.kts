@@ -36,9 +36,10 @@ dependencies {
     api(libs.androidx.lifecycle.livedata)
     api(libs.androidx.lifecycle.runtime)
 
-    //api(libs.scaffold.page)
-    //api(libs.scaffold.arch)
+    api(libs.scaffold.page)
+    api(libs.scaffold.arch)
     api(libs.utilcode)
+    api("com.github.DylanCaiCoding.ViewBindingKTX:viewbinding-base:2.1.0")
 
     testImplementation(libs.test.junit4)
     androidTestImplementation(libs.test.androidx.junit)
