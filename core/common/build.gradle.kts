@@ -40,6 +40,7 @@ dependencies {
     api(libs.scaffold.arch)
     api(libs.utilcode)
     api("com.github.DylanCaiCoding.ViewBindingKTX:viewbinding-base:2.1.0")
+    api("com.github.liangjingkanji:BRV:1.3.86")
 
     testImplementation(libs.test.junit4)
     androidTestImplementation(libs.test.androidx.junit)

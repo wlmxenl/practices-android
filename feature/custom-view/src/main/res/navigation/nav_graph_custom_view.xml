@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:startDestination="@id/custom_view_fragment_list"
-    android:id="@+id/nav_graph_custom_view">
+    android:id="@+id/nav_graph_custom_view"
+    app:startDestination="@id/custom_view_fragment_list">
 
     <fragment
         android:id="@+id/custom_view_fragment_list"
         android:name="com.demo.archive.customview.CustomViewListFragment" />
+
+    <fragment
+        android:id="@+id/xfermode_fragment"
+        android:name="com.demo.archive.customview.xfermode.XfermodeFragment" />
 
 </navigation>
