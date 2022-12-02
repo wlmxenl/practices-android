@@ -37,9 +37,11 @@ class CustomViewListFragment : BaseFragment<CustomListLayoutBinding>() {
                         this@CustomViewListFragment.scaffoldNavigate(itemModel.third)
                     }
                 }
-            }.models = mutableListOf<Any>().apply {
-            add(Triple("SportView", "文本居中绘制、Paint.Cap", R.id.sport_view_fragment))
-            add(Triple("xfermode", "PorterDuff.Mode", R.id.xfermode_fragment))
-        }
+            }
+            .models = mutableListOf<Any>().apply {
+                add(Triple("MixTextView", "Paint.breakText", R.id.mix_textview_fragment))
+                add(Triple("SportView", "文本居中绘制、Paint.Cap", R.id.sport_view_fragment))
+                add(Triple("xfermode", "PorterDuff.Mode", R.id.xfermode_fragment))
+            }
     }
 }

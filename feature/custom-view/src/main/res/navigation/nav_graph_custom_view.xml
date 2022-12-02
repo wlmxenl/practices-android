@@ -5,6 +5,10 @@
     app:startDestination="@id/custom_view_fragment_list">
 
     <fragment
+        android:id="@+id/mix_textview_fragment"
+        android:name="com.demo.archive.customview.mixtextview.MixTextViewFragment" />
+
+    <fragment
         android:id="@+id/sport_view_fragment"
         android:name="com.demo.archive.customview.sportview.SportViewFragment" />
 
