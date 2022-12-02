@@ -41,6 +41,7 @@ dependencies {
     api(libs.utilcode)
     api("com.github.DylanCaiCoding.ViewBindingKTX:viewbinding-base:2.1.0")
     api("com.github.liangjingkanji:BRV:1.3.86")
+    api("com.github.wlmxenl:ScreenAdaptation:1.1")
 
     testImplementation(libs.test.junit4)
     androidTestImplementation(libs.test.androidx.junit)
