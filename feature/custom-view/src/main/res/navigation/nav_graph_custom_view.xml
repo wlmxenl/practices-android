@@ -5,6 +5,10 @@
     app:startDestination="@id/custom_view_fragment_list">
 
     <fragment
+        android:id="@+id/weather_views_fragment"
+        android:name="com.demo.archive.customview.weather.WeatherViewsFragment" />
+
+    <fragment
         android:id="@+id/circle_avatar_fragment"
         android:name="com.demo.archive.customview.circleavatar.CircleAvatarFragment" />
 
