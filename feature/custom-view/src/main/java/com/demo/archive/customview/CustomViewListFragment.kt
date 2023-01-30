@@ -39,6 +39,7 @@ class CustomViewListFragment : BaseFragment<CustomListLayoutBinding>() {
                 }
             }
             .models = mutableListOf<Any>().apply {
+                add(Triple("TagLayout", "自定义 ViewGroup 示例", R.id.tag_layout_fragment))
                 add(Triple("天气相关View", "PathMeasure", R.id.weather_views_fragment))
                 add(Triple("CircleAvatarView", "Canvas.clipPath、PorterDuff.Mode", R.id.circle_avatar_fragment))
                 add(Triple("MixTextView", "Paint.breakText", R.id.mix_textview_fragment))
