@@ -5,6 +5,10 @@
     app:startDestination="@id/custom_view_fragment_list">
 
     <fragment
+        android:id="@+id/coupon_fragment"
+        android:name="com.demo.archive.customview.couponview.CouponViewFragment" />
+
+    <fragment
         android:id="@+id/tag_layout_fragment"
         android:name="com.demo.archive.customview.taglayout.TagLayoutFragment" />
 
