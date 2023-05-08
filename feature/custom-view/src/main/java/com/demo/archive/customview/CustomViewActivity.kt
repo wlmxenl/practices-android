@@ -9,4 +9,8 @@ import com.demo.core.common.base.BaseNavHostActivity
 class CustomViewActivity : BaseNavHostActivity() {
 
     override fun getNavGraphResId() = R.navigation.nav_graph_custom_view
+
+    override fun getCustomStartDestination(): Int {
+        return R.id.weather_views_fragment
+    }
 }

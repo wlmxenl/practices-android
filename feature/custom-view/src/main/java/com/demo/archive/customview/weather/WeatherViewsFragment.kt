@@ -7,6 +7,8 @@ import com.demo.core.common.base.BaseFragment
 class WeatherViewsFragment : BaseFragment<WeatherViewsLayoutBinding>() {
 
     override fun onPageViewCreated(savedInstanceState: Bundle?) {
-
+        binding.ssv1.setRatio(0.4f)
+        binding.ssv2.setRatio(0.7f)
     }
+
 }

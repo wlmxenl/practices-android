@@ -1,12 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.demo.archive.customview.weather.SunView
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/dp_100"
-        android:layout_marginHorizontal="@dimen/dp_10" />
+    <com.demo.archive.customview.weather.SunriseSunsetView
+        android:id="@+id/ssv_1"
+        android:layout_width="@dimen/dp_170"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_10"
+        app:ssv_icon="@drawable/ic_sun"
+        app:ssv_line_color="#FFC536"
+        app:ssv_shadow_color="#FFF9EB" />
+
+
+    <com.demo.archive.customview.weather.SunriseSunsetView
+        android:id="@+id/ssv_2"
+        android:layout_width="@dimen/dp_170"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_10"
+        app:ssv_icon="@drawable/ic_moon"
+        app:ssv_line_color="#1296DB"
+        app:ssv_shadow_color="#E7F5FB" />
 
 </LinearLayout>
