@@ -11,7 +11,7 @@ testAndroidxEspressoCore = "3.4.0"
 scaffold = "955b39c467"
 utilcode = "1.31.1"
 okhttp = "4.10.0"
-net = "3.5.2"
+net = "3.6.4"
 
 androidxCore = "1.8.0"
 androidxAppCompat = "1.5.1"
