@@ -6,6 +6,18 @@
 
 
     <fragment
+        android:id="@+id/muyu_anim_fragment"
+        android:name="com.demo.archive.customview.muyu.MuYuAnimFragment" />
+
+    <fragment
+        android:id="@+id/coin_anim_fragment"
+        android:name="com.demo.archive.customview.coin.CoinAnimFragment" />
+
+    <fragment
+        android:id="@+id/fozhu_fragment"
+        android:name="com.demo.archive.customview.fozhu.FoZhuFragment" />
+
+    <fragment
         android:id="@+id/clip_view_fragment"
         android:name="com.demo.archive.customview.clip.ClipViewFragment" />
 

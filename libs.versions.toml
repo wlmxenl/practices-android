@@ -1,7 +1,7 @@
 [versions]
-compileSdk = "33"
+compileSdk = "34"
 minSdk = "21"
-targetSdk = "33"
+targetSdk = "34"
 javaCompiler = "1.8"
 
 testJunit = "4.13.2"

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="fozhu_type_array">
+        <item>纵向</item>
+        <item>横向</item>
+        <item>3D</item>
+    </string-array>
+</resources>
