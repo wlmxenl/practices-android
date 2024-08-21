@@ -11,6 +11,6 @@ class CustomViewActivity : BaseNavHostActivity() {
     override fun getNavGraphResId() = R.navigation.nav_graph_custom_view
 
     override fun getCustomStartDestination(): Int {
-        return R.id.clip_view_fragment
+        return R.id.beads_fragment
     }
 }

@@ -34,5 +34,8 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
             binding.ctlFlowLayout.referencedIds = referenceIds
             binding.ctlRootLayout.run { requestLayout() }
         }
+
+        startActivity(Intent(this, CustomViewActivity::class.java))
     }
+
 }

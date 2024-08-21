@@ -4,6 +4,9 @@
     android:id="@+id/nav_graph_custom_view"
     app:startDestination="@id/custom_view_fragment_list">
 
+    <fragment
+        android:id="@+id/beads_fragment"
+        android:name="com.demo.archive.customview.beads.BeadsViewFragment" />
 
     <fragment
         android:id="@+id/clip_view_fragment"

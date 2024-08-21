@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <FrameLayout
+        android:id="@+id/beads_layout"
+        android:layout_width="@dimen/dp_150"
+        android:layout_height="@dimen/dp_375"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_bead_0"
+            android:layout_width="@dimen/dp_86"
+            android:layout_height="@dimen/dp_86"
+            android:layout_marginStart="@dimen/dp_63"
+            android:layout_marginTop="@dimen/dp_102"
+            android:src="@drawable/bead" />
+
+        <ImageView
+            android:id="@+id/iv_bead_1"
+            android:layout_width="@dimen/dp_86"
+            android:layout_height="@dimen/dp_86"
+            android:layout_marginStart="@dimen/dp_63"
+            android:layout_marginTop="@dimen/dp_188"
+            android:src="@drawable/bead" />
+
+        <ImageView
+            android:id="@+id/iv_bead_2"
+            android:layout_width="@dimen/dp_83"
+            android:layout_height="@dimen/dp_83"
+            android:layout_marginStart="@dimen/dp_59"
+            android:layout_marginTop="@dimen/dp_255"
+            android:src="@drawable/bead" />
+
+        <ImageView
+            android:id="@+id/iv_bead_3"
+            android:layout_width="@dimen/dp_102"
+            android:layout_height="@dimen/dp_102"
+            android:layout_marginStart="@dimen/dp_28_5"
+            android:layout_marginTop="@dimen/dp_273"
+            android:src="@drawable/bead" />
+
+        <ImageView
+            android:id="@+id/iv_bead_4"
+            android:layout_width="@dimen/dp_102"
+            android:layout_height="@dimen/dp_102"
+            android:layout_marginStart="@dimen/dp_14"
+            android:layout_marginTop="@dimen/dp_263"
+            android:src="@drawable/bead" />
+
+        <ImageView
+            android:id="@+id/iv_bead_5"
+            android:layout_width="@dimen/dp_107"
+            android:layout_height="@dimen/dp_107"
+            android:layout_marginStart="@dimen/dp_0"
+            android:layout_marginTop="@dimen/dp_188"
+            android:src="@drawable/bead" />
+
+        <ImageView
+            android:id="@+id/iv_bead_9"
+            android:layout_width="@dimen/dp_81"
+            android:layout_height="@dimen/dp_81"
+            android:layout_marginStart="@dimen/dp_61_5"
+            android:layout_marginTop="@dimen/dp_38"
+            android:src="@drawable/bead" />
+
+        <ImageView
+            android:id="@+id/iv_bead_8"
+            android:layout_width="@dimen/dp_93"
+            android:layout_height="@dimen/dp_93"
+            android:layout_marginStart="@dimen/dp_37_5"
+            android:layout_marginTop="@dimen/dp_0"
+            android:src="@drawable/bead" />
+
+        <ImageView
+            android:id="@+id/iv_bead_7"
+            android:layout_width="@dimen/dp_96"
+            android:layout_height="@dimen/dp_96"
+            android:layout_marginStart="@dimen/dp_14"
+            android:layout_marginTop="@dimen/dp_8_5"
+            android:src="@drawable/bead" />
+
+        <ImageView
+            android:id="@+id/iv_bead_6"
+            android:layout_width="@dimen/dp_107"
+            android:layout_height="@dimen/dp_107"
+            android:layout_marginStart="@dimen/dp_0"
+            android:layout_marginTop="@dimen/dp_77"
+            android:src="@drawable/bead" />
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/view_click_area"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</FrameLayout>
