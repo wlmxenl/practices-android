@@ -5,6 +5,10 @@
     app:startDestination="@id/custom_view_fragment_list">
 
     <fragment
+        android:id="@+id/wooden_fish_fragment"
+        android:name="com.demo.archive.customview.wooden_fish.WoodenFishFragment" />
+
+    <fragment
         android:id="@+id/beads_fragment"
         android:name="com.demo.archive.customview.beads.BeadsViewFragment" />
 
